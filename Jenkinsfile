@@ -33,7 +33,7 @@ pipeline {
         // ===== BACKEND BUILD =====
         stage('Build Backend') {
             steps {
-                dir('springbootend') {
+                dir('springbootbackendend') {
                     bat 'mvn clean package -DskipTests'
                 }
             }
