@@ -5,7 +5,7 @@ pipeline {
         // ===== FRONTEND BUILD =====
         stage('Build Frontend') {
             steps {
-                dir('reactfrontend") {') {
+                dir('reactfrontend') {
                     bat 'npm install'
                     bat 'npm run build'
                 }
